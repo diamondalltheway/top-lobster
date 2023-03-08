@@ -1,89 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-    }
-  </style>
   <head>
+    <meta name="robots" content="noindex,nofollow"> <!--!!!!!!!!!REMOVE WHEN COPYING/PASTING!!!!-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <title>Hunter Stevens • Full Stack Developer</title>
-
     <!--CDNs-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
-
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   </head>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+
   <body>
-    <div class="relative bg-gray-50 overflow-hidden">
+    <div class="relative bg-gray-900 overflow-hidden">
       <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full">
         <div class="relative h-full max-w-screen-xl mx-auto">
-          <svg
-            class="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2"
-            width="404"
-            height="784"
-            fill="none"
-            viewBox="0 0 404 784"
-          >
-            <defs>
-              <pattern
-                id="svg-pattern-squares-1"
-                x="0"
-                y="0"
-                width="20"
-                height="20"
-                patternUnits="userSpaceOnUse"
-              >
-                <rect
-                  x="0"
-                  y="0"
-                  width="4"
-                  height="4"
-                  class="text-gray-200"
-                  fill="currentColor"
-                />
-              </pattern>
-            </defs>
-            <rect width="404" height="784" fill="url(#svg-pattern-squares-1)" />
-          </svg>
-          <svg
-            class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
-            width="404"
-            height="784"
-            fill="none"
-            viewBox="0 0 404 784"
-          >
-            <defs>
-              <pattern
-                id="svg-pattern-squares-2"
-                x="0"
-                y="0"
-                width="20"
-                height="20"
-                patternUnits="userSpaceOnUse"
-              >
-                <rect
-                  x="0"
-                  y="0"
-                  width="4"
-                  height="4"
-                  class="text-gray-200"
-                  fill="currentColor"
-                />
-              </pattern>
-            </defs>
-            <rect width="404" height="784" fill="url(#svg-pattern-squares-2)" />
-          </svg>
         </div>
       </div>
-
       <div
         x-data="{ open: false }"
         class="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32"
@@ -121,32 +64,32 @@
                   </button>
                 </div>
               </div>
-              <div class="hidden md:block inline-flex items-baseline mr-8 px-2 py-1 rounded-lg text-sm font-medium bg-green-100 text-green-600 md:mt-2 lg:mt-0">
+              <div class="hidden md:block inline-flex items-baseline mr-8 px-2 py-1 rounded-lg text-sm font-medium bg-pink-100 text-pink-600 md:mt-2 lg:mt-0 shadow-lg shadow-pink-900">
                 English: Native
               </div>
-              <div class="hidden md:block inline-flex items-baseline mr-8 px-2 py-1 rounded-lg text-sm font-medium bg-green-100 text-green-600 md:mt-2 lg:mt-0">
+              <div class="hidden md:block inline-flex items-baseline mr-8 px-2 py-1 rounded-lg text-sm font-medium bg-pink-100 text-pink-600 md:mt-2 lg:mt-0 shadow-lg shadow-pink-900">
                 Spanish: B2 
               </div>
             </div>
             <div class="hidden md:block">
               <a
                 href="#skills"
-                class="font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                class="font-medium text-gray-100 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
                 >Technologies</a
               >
               <a
                 href="#projects"
-                class="ml-10 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                class="ml-10 font-medium text-gray-100 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
                 >Projects</
               >
               <a
                 href="#contact"
-                class="ml-10 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                class="ml-10 font-medium text-gray-100 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
                 >Contact</a
               >
               <a
                 href="#favorites"
-                class="ml-10 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                class="ml-10 font-medium text-gray-100 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
                 >Favorites</a
               >
             </div>
@@ -154,11 +97,23 @@
             <div
               class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"
             >
-              <span class="inline-flex rounded-md shadow">
+            <a
+            href="https://github.com/diamondalltheway"
+            class="ml-6 text-gray-600 hover:text-gray-700"
+          >
+            <span class="sr-only">GitHub</span>
+            <svg class="h-10 w-10 mx-6 text-green-200" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+              <span class="inline-flex rounded-md shadow-lg shadow-green-900">
                 <a
                   href="#contact"
-                  class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-indigo-700 transition duration-150 ease-in-out"
-                  target="_blank"
+                  class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-green-100 hover:text-green-500 focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-indigo-700 transition duration-150 ease-in-out"
                   >
                   Contact
                 </a>
@@ -235,17 +190,6 @@
                   >Favorites</a
                 >
               </div>
-            <!--
-              <div>
-                <a
-                  href="assets/Hunter_Stevens.pdf"
-                  class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-200 hover:text-indigo-700 focus:outline-none focus:bg-gray-200 focus:text-indigo-700 transition duration-150 ease-in-out"
-                  target="_blank"
-                  >
-                  Resume
-                </a>
-              </div>
-            -->
             </div>
           </div>
         </div>
@@ -255,31 +199,31 @@
         >
           <div class="text-center">
             <div class="mx-auto">
-              <img class="h-48 w-48 rounded-full xl:h-80 xl:w-80 mx-auto" src="assets/headshot.jpeg" alt="" />
+              <img class="h-48 w-48 rounded-full xl:h-80 xl:w-80 mx-auto shadow-lg shadow-pink-700" src="assets/headshot.jpeg" alt="" />
             </div>
             <h2
-              class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
+              class="mt-10 text-4xl tracking-tight leading-10 font-extrabold text-gray-100 sm:text-5xl sm:leading-none md:text-6xl"
             >
               Hunter Stevens
               <br class="md:block">
-              <span class="text-indigo-600">Full Stack Developer</span>
+              <span class="text-gray-400">Full Stack Developer</span>
             </h2>
             <p
-              class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
+              class="mt-3 max-w-md mx-auto text-base text-gray-400 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
             >
               Hello, I'm Hunter! I am from 
-              <span class="font-semibold text-gray-700">
+              <span class="font-semibold text-gray-200">
                 <a href="https://www.google.com/maps/place/The+Woodlands,+TX/@30.1683149,-95.5938911,12z/data=!3m1!4b1!4m5!3m4!1s0x86473147c603385b:0xf1a4808e67c3df5d!8m2!3d30.1658207!4d-95.4612625" target="_blank">The Woodlands, Texas</a>.
               </span>
               <br>
               Certifications: 
               <a href="https://launchschool.com/courses" target="_blank">
-                <span class="font-semibold text-gray-700">
-                  Launch School <span class="font-light">(Backend)</span>
+                <span class="font-semibold text-gray-200">
+                  Launch School <span class="font-light">(Core Curriculum)</span>
                 </span>
               </a>
               <br>
-              Currently Building: <span class="font-semibold text-gray-700">DataForest.io</span>
+              Currently Building: <span class="font-semibold text-gray-200">AirMailer.io</span>
             </p>
             <br>
             
@@ -289,7 +233,7 @@
               <div class="rounded-md shadow">
                 <a
                   href="#contact"
-                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                  class="w-full flex items-center justify-center px-2.5 py-1.5 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-green-100 hover:text-green-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10 shadow-lg shadow-green-900"
                   >
                   Contact
                 </a>
@@ -307,231 +251,186 @@
         </div>
       </div>
     </div>
-     <!-- This example requires Tailwind CSS v2.0• -->
-      <div class="" id="skills">
+      <div class="bg-gray-900 py-8" id="skills">
         <div class="">
-          <!-- This example requires Tailwind CSS v2.0• -->
-          <div class="bg-gray-700 pt-12 sm:pt-16">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Technologies Used</h2>
-                <p class="mt-3 text-xl text-gray-500 sm:mt-4">*Open to new languages and frameworks</p>
-              </div>
-            </div>
-            <div class="mt-10 pb-12 sm:pb-16 bg-gray-700">
-              <div class="relative ">
-                <div class="absolute inset-0 h-1/2"></div>
-                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                  <div class="max-w-4xl mx-auto my-2">
-                    <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
-                      <div class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-                        <i class="devicon-ruby-plain colored text-6xl"></i>
-                        <p class="font-medium m-2 md:m-2">Ruby</p>
-                      </div>
-                      <div class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
-                        <i class="devicon-rails-plain colored text-6xl"></i>
-                        <p class="font-medium m-2">Rails</p>
-                      </div>
-                      <div class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-                        <i class="devicon-tailwindcss-plain colored text-6xl"></i>
-                        <p class="font-medium m-2">Tailwind CSS</p>
-                      </div>
-                    </dl>
+          <h2 class="text-3xl font-bold tracking-tight text-white text-center sm:text-4xl">Technologies Used</h2>
+          <!-- Logo Cloud Row -->
+            <div class="bg-gray-900">
+              <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+                  <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
                   </div>
-
-                  <div class="max-w-4xl mx-auto my-2">
-                    <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
-                      <div class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-                        <i class="devicon-javascript-plain colored text-6xl"></i>
-                        <p class="font-medium m-2">JavaScript</p>
-                      </div>
-                      <div class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
-                        <img class="w-1/6 md:w-1/4 mx-auto" src="/assets/alpinejs.png">
-                        <p class="font-medium m-2">Alpine JS</p>
-                      </div>
-                      <div class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-                        <i class="devicon-postgresql-plain colored text-6xl"></i>
-                        <p class="font-medium m-2">PostgreSQL</p>
-                      </div>
-                    </dl>
+                  <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
                   </div>
-
-                  <div class="max-w-4xl mx-auto my-2">
-                    <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
-                      <div class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-                        <i class="devicon-amazonwebservices-original colored text-6xl"></i>
-                        <p class="font-medium m-2">AWS</p>
-                      </div>
-                      <div class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
-                        <i class="devicon-heroku-original colored text-6xl"></i>
-                        <p class="font-medium m-2">Heroku</p>
-                      </div>
-                      <div class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-                        <img class="w-1/6 md:w-1/5 mx-auto" src="/assets/postgis.png">
-                        <p class="font-medium m-2">PostGIS</p>
-                      </div>
-                    </dl>
+                  <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg">
+                  </div>
+                  <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg">
+                  </div>
+                  <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg">
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+
+            <!-- Logo Cloud Row -->
+            <div class="bg-gray-900">
+              <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+                  <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="Tuple">
+                  </div>
+                  <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Mirage">
+                  </div>
+                  <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="StaticKit">
+                  </div>
+                  <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Transistor">
+                  </div>
+                  <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Workcation">
+                  </div>
+                </div>
+              </div>
+            </div>
+                      
+          
 
           
 
-
-   </div>
-  </div>
-
-    <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"  id="projects">
-      <div class="absolute inset-0">
-        <div class="bg-white h-1/3 sm:h-2/3"></div>
-      </div>
-      <div class="relative max-w-7xl mx-auto">
-        <div class="text-center">
-          <h2 class="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-            Public Projects
-          </h2>
-          <p class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
-            <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed. -->
-          </p>
         </div>
-        <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0">
-              <img class="h-48 w-full object-cover" src="assets/landscape.png" alt="" />
-            </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div class="flex-1">
-                <p class="text-sm leading-5 font-medium text-indigo-600">
-                  <a href="#" class="hover:underline">
-                    Education
-                  </a>
-                </p>
-                <a href="#" class="block">
-                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                    VerticalSpanish.com
-                  </h3>
-                  <p class="mt-3 text-base leading-6 text-gray-600">
-                    Learn Spanish within a world that inspires. 
-                  </p>
-                </a>
-              </div>
-              <div class="mt-6 flex items-center">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                  </a>
-                </div>
-                <div class="ml-3">
-                  <p class="text-sm leading-5 font-medium text-gray-900">
-                    <a href="#" class="hover:underline">
-                    Rails • Alpine.js • Tailwind CSS
-                    </a>
-                  </p>
-                  <div class="flex text-sm leading-5 text-gray-500">
-                    <time datetime="2020-03-16">
-               
-                    </time>
-                    <span class="mx-1">
-                      &middot;
-                    </span>
-                    <span>
-        
-                    </span>
-                  </div>
-                </div>
-              </div>
+      </div>
+
+ <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-gray-900">
+  <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">Public Projects</h2>
+        <p class="mt-3 max-w-3xl text-lg text-gray-500">Here are a couple of public facing projects that I have worked on in the past.</p>
+        <div class="mt-8 sm:flex">
+          <div class="mt-3 sm:mt-0 sm:ml-3">
+            <div class="rounded-md shadow">
+              <a
+                href="#contact"
+                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-green-100 hover:text-green-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-2 md:text-lg md:px-6 shadow-lg shadow-green-900"
+                >
+                Contact
+              </a>
             </div>
           </div>
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0">
-              <img class="h-48 w-full object-cover" src="assets/df-demo.png" alt="" />
-            </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div class="flex-1">
-                <p class="text-sm leading-5 font-medium text-indigo-600">
-                  <a href="#" class="hover:underline"> Homeowner Data</a>
-                </p>
-                <a href="https://dataforest.io" target="_blank" class="block">
-                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                    DataForest.io
-                  </h3>
-                  <p class="mt-3 text-base le ading-6 text-gray-600">
-                    Bringing Homeowner and Apartment data to marketers.
-                  </p>
-                </a>
-              </div>
-              <div class="mt-6 flex items-center">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                  </a>
-                </div>
-                <div class="ml-3">
-                  <p class="text-sm leading-5 font-medium text-gray-900">
-                      Rails  • PostGIS
-                  </p>
-                  <div class="flex text-sm leading-5 text-gray-500">
-                    <time datetime="2020-03-16">
-                    </time>
-                    <span class="mx-1">
-                      &middot;
-                    </span>
-                    <span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0">
-              <img class="h-48 w-full object-cover" src="assets/ch-demo.png" alt="" />
-            </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div class="flex-1">
-                <p class="text-sm leading-5 font-medium text-indigo-600">
-                  <a href="#" class="hover:underline">Employment Data</a>
-                </p>
-                <a href="https://candidatehunter.io" target="_blank" class="block">
-                  <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                    CandidateHunter.io
-                  </h3>
-                  <p class="mt-3 text-base leading-6 text-gray-600">
-                    Bridging the employment gap between Colombia and North America.
-                  </p>
-                </a>
-              </div>
-              <div class="mt-6 flex items-center">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                  </a>
-                </div>
-                <div class="ml-3">
-                  <p class="text-sm leading-5 font-medium text-gray-900">
-                    Rails • JS
-                  </p>
-                  <div class="flex text-sm leading-5 text-gray-500">
-                    <time datetime="2020-03-16">
-                    </time>
-                    <span class="mx-1">
-                      &middot;
-                    </span>
-                    <span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2 shadow-xl shadow-pink-900 rounded-xl">
+        <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8 rounded">
+          <img class="w-full" src="assets/logo-vs.png">
+        </div>
+        <div class="col-span-1 justify-center bg-gray-50 py-8 px-8">
+          <span class="inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-sm font-medium text-indigo-800">
+            <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+              <circle cx="4" cy="4" r="3" />
+            </svg>
+            Express.js
+          </span>
+          <span class="inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-sm font-medium text-indigo-800">
+            <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+              <circle cx="4" cy="4" r="3" />
+            </svg>
+            MongoDB
+          </span>
+          <span class="inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-sm font-medium text-indigo-800">
+            <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+              <circle cx="4" cy="4" r="3" />
+            </svg>
+            Tailwind CSS
+          </span>
+        </div>
+        <!-- <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+          <img class="max-h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple">
+        </div>
+        <div class="col-span-1 justify-center bg-gray-50 py-8 px-8">
+          <span class="inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-sm font-medium text-indigo-800">
+            <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+              <circle cx="4" cy="4" r="3" />
+            </svg>
+            Express.js
+          </span>
+          <span class="inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-sm font-medium text-indigo-800">
+            <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+              <circle cx="4" cy="4" r="3" />
+            </svg>
+            MongoDB
+          </span>
+          <span class="inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-sm font-medium text-indigo-800">
+            <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+              <circle cx="4" cy="4" r="3" />
+            </svg>
+            Tailwind CSS
+          </span>
+        </div> -->
+        <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+          <img class="w-full" src="assets/logo-df.png" alt="DataForest">
+        </div>
+        <div class="col-span-1 justify-center bg-gray-50 py-8 px-8">
+          <span class="inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-sm font-medium text-indigo-800">
+            <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+              <circle cx="4" cy="4" r="3" />
+            </svg>
+            Rails
+          </span>
+          <span class="inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-sm font-medium text-indigo-800">
+            <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+              <circle cx="4" cy="4" r="3" />
+            </svg>
+            Postgres
+          </span>
+          <span class="inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-sm font-medium text-indigo-800">
+            <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+              <circle cx="4" cy="4" r="3" />
+            </svg>
+            Tailwind CSS
+          </span>
         </div>
       </div>
     </div>
-   
+  </div>
+</div>
 
-   
 
-    <div id=contact class="bg-gray-700">
-      <div class="pt-12 sm:pt-16 lg:pt-20 bg-gray-700">
+
+<div class="bg-gray-900">
+  <div class="mx-auto max-w-7xl py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-24">
+    <img src="assets/logo-ls.png" class="mx-auto w-1/3 my-4">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Core Curriculum Graduate
+        </h2>
+      <p class="mt-3 text-xl text-indigo-200 sm:mt-4">Mastery-Based Learning</p>
+    </div>
+    <dl class="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-8">
+      <div class="flex flex-col">
+        <dt class="order-2 mt-2 text-lg font-medium leading-6 text-indigo-200">Months</dt>
+        <dd class="order-1 text-5xl font-bold tracking-tight text-white">27</dd>
+      </div>
+      <div class="mt-10 flex flex-col sm:mt-0">
+        <dt class="order-2 mt-2 text-lg font-medium leading-6 text-indigo-200">Study Hours</dt>
+        <dd class="order-1 text-5xl font-bold tracking-tight text-white">935</dd>
+      </div>
+      <div class="mt-10 flex flex-col sm:mt-0">
+        <dt class="order-2 mt-2 text-lg font-medium leading-6 text-indigo-200">Assessments</dt>
+        <dd class="order-1 text-5xl font-bold tracking-tight text-white">13</dd>
+      </div>
+    </dl>
+  </div>
+</div>
+   
+    <div id=contact class="bg-gray-900">
+      <div class="pt-12 sm:pt-16 lg:pt-20">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center">
             <h2 class="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
@@ -543,11 +442,12 @@
           </div>
         </div>
       </div>
-      <div class="mt-8 bg-gray-700 pb-16 sm:mt-12 sm:pb-20 lg:pb-28">
+      
+      <div class="mt-8 bg-gray-900 pb-16 sm:mt-12 sm:pb-20 lg:pb-28">
         <div class="relative">
           <div class="absolute h-1/2 bg-indigo-200"></div>
           <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-lg mx-auto rounded-lg shadow-lg">
+            <div class="max-w-lg mx-auto rounded-lg shadow-xl shadow-pink-900">
               <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-12 rounded-xl">
                 <h3 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9">
                   Please feel free to reach out!
@@ -591,7 +491,7 @@
         </div>
       </div>
     </div>
-    <div id="favorites" class="bg-gray-50" x-data="{ openPanel: null }">
+    <div id="favorites" class="bg-gray-900" x-data="{ openPanel: null }">
       <div class="max-w-screen-xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto">
           <h2
@@ -629,36 +529,36 @@
                   </button>
                 </dt>
                 <dd class="mt-2 pr-12" x-show="openPanel === 1">
-                  <p class="text-base leading-6 text-gray-500">
-                  1. <span class="font-bold text-black"> 12 Rules for Life</span>, Jordan B. Peterson
+                  <p class="text-base leading-6 text-gray-400">
+                  1. <span class="font-bold text-gray-200"> 12 Rules for Life</span>, Jordan B. Peterson
                   <br>
-                  2. <span class="font-bold text-black">Hard Thing About Hard Things</span>, Ben Horowitz
+                  2. <span class="font-bold text-gray-200">Hard Thing About Hard Things</span>, Ben Horowitz
                   <br>
-                  3. <span class="font-bold text-black">Zero to One</span>, Peter Thiel
+                  3. <span class="font-bold text-gray-200">Zero to One</span>, Peter Thiel
                   <br>
-                  4. <span class="font-bold text-black">Rework</span>, Jason Fried • David Heinemeier Hanson
+                  4. <span class="font-bold text-gray-200">Rework</span>, Jason Fried • David Heinemeier Hanson
                   <br>
-                  5. <span class="font-bold text-black">Delivering Happiness</span>, Tony Hsieh
+                  5. <span class="font-bold text-gray-200">Delivering Happiness</span>, Tony Hsieh
                   <br>
-                  6. <span class="font-bold text-black">The Launch Pad: Inside Y Combinator</span>, Randal Stross
+                  6. <span class="font-bold text-gray-200">The Launch Pad: Inside Y Combinator</span>, Randal Stross
                   <br>
-                  7. <span class="font-bold text-black">Remote</span>, Jason Fried • David Heinemeier Hanson
+                  7. <span class="font-bold text-gray-200">Remote</span>, Jason Fried • David Heinemeier Hanson
                   <br>
-                  8. <span class="font-bold text-black">Shoe Dog</span>, Phil Knight
+                  8. <span class="font-bold text-gray-200">Shoe Dog</span>, Phil Knight
                   <br>
-                  9. <span class="font-bold text-black">Crazy Love</span>, Francis Chan
+                  9. <span class="font-bold text-gray-200">Crazy Love</span>, Francis Chan
                   <br>
-                  10. <span class="font-bold text-black">Tocqueville and the American Experiment</span>, William R. Cook
+                  10. <span class="font-bold text-gray-200">Tocqueville and the American Experiment</span>, William R. Cook
                   <br>
-                  11. <span class="font-bold text-black">Extreme Ownership</span>, Jacko Wilink • Leif Babin
+                  11. <span class="font-bold text-gray-200">Extreme Ownership</span>, Jacko Wilink • Leif Babin
                   <br>
-                  12. <span class="font-bold text-black">Outliers</span>, Malcom Gladwell
+                  12. <span class="font-bold text-gray-200">Outliers</span>, Malcom Gladwell
                   <br>
-                  13. <span class="font-bold text-black">David and Goliath</span>, Malcom Gladwell
+                  13. <span class="font-bold text-gray-200">David and Goliath</span>, Malcom Gladwell
                   <br>
-                  14. <span class="font-bold text-black">Things That Matter</span>, Charles Krauthammer
+                  14. <span class="font-bold text-gray-200">Things That Matter</span>, Charles Krauthammer
                   <br>
-                  15. <span class="font-bold text-black">10x Rule</span>, Grant Cardone
+                  15. <span class="font-bold text-gray-200">10x Rule</span>, Grant Cardone
                 </p>
                 </dd>
               </div>
@@ -691,26 +591,26 @@
                     </button>
                   </dt>
                   <dd class="mt-2 pr-12" x-show="openPanel === 2">
-                    <p class="text-base leading-6 text-gray-500">
-                      1. <span class="font-bold text-black">You've Got Mail</span>
+                    <p class="text-base leading-6 text-gray-400">
+                      1. <span class="font-bold text-gray-200">You've Got Mail</span>
                       <br>
-                      2. <span class="font-bold text-black">Interstellar</span>
+                      2. <span class="font-bold text-gray-200">Interstellar</span>
                       <br>
-                      3. <span class="font-bold text-black">Blood Diamond</span>
+                      3. <span class="font-bold text-gray-200">Blood Diamond</span>
                       <br>
-                      4. <span class="font-bold text-black">Angels in the Outfield</span>
+                      4. <span class="font-bold text-gray-200">Angels in the Outfield</span>
                       <br>
-                      5. <span class="font-bold text-black">Lord of the Rings</span> (Trilogy)
+                      5. <span class="font-bold text-gray-200">Lord of the Rings</span> (Trilogy)
                       <br>
-                      6. <span class="font-bold text-black">Gangs of New York</span>
+                      6. <span class="font-bold text-gray-200">Gangs of New York</span>
                       <br>
-                      7. <span class="font-bold text-black">100 Foot Journey</span>
+                      7. <span class="font-bold text-gray-200">100 Foot Journey</span>
                       <br>
-                      8. <span class="font-bold text-black">The Matrix</span>
+                      8. <span class="font-bold text-gray-200">The Matrix</span>
                       <br>
-                      9. <span class="font-bold text-black">Training Day</span>
+                      9. <span class="font-bold text-gray-200">Training Day</span>
                       <br>
-                      10. <span class="font-bold text-black">Catch Me If You Can</span>
+                      10. <span class="font-bold text-gray-200">Catch Me If You Can</span>
                     </p>
                   </dd>
                 </div>
@@ -744,26 +644,26 @@
                     </button>
                   </dt>
                   <dd class="mt-2 pr-12" x-show="openPanel === 3">
-                    <p class="text-base leading-6 text-gray-500">
-                      1. <span class="font-bold text-black">Severance</span>
+                    <p class="text-base leading-6 text-gray-400">
+                      1. <span class="font-bold text-gray-200">Severance</span>
                       <br>
-                      2. <span class="font-bold text-black">Suits</span>
+                      2. <span class="font-bold text-gray-200">Suits</span>
                       <br>
-                      3. <span class="font-bold text-black">That 70's Show</span>
+                      3. <span class="font-bold text-gray-200">That 70's Show</span>
                       <br>
-                      4. <span class="font-bold text-black">Body Gaurd</span>
+                      4. <span class="font-bold text-gray-200">Body Gaurd</span>
                       <br>
-                      5. <span class="font-bold text-black">Line of Duty</span>
+                      5. <span class="font-bold text-gray-200">Line of Duty</span>
                       <br>
-                      6. <span class="font-bold text-black">Dexter</span>
+                      6. <span class="font-bold text-gray-200">Dexter</span>
                       <br>
-                      7. <span class="font-bold text-black">Cheers</span>
+                      7. <span class="font-bold text-gray-200">Cheers</span>
                       <br>
-                      8. <span class="font-bold text-black">Yu Yu Hakusho</span>
+                      8. <span class="font-bold text-gray-200">Yu Yu Hakusho</span>
                       <br>
-                      9. <span class="font-bold text-black">True Detective</span>
+                      9. <span class="font-bold text-gray-200">True Detective</span>
                       <br>
-                      10. <span class="font-bold text-black">Fargo</span>
+                      10. <span class="font-bold text-gray-200">Fargo</span>
                     </p>
                   </dd>
                 </div>
@@ -797,36 +697,47 @@
                     </button>
                   </dt>
                   <dd class="mt-2 pr-12" x-show="openPanel === 4">
-                    <p class="text-base leading-6 text-gray-500">
-                      1. <span class="font-bold text-black">The Woodlands, Texas </span> (I'm a hometown kind of guy)
+                    <p class="text-base leading-6 text-gray-400">
+                      1. <span class="font-bold text-gray-200">The Woodlands, Texas </span> (I'm a hometown kind of guy)
                       <br>
-                      2. <span class="font-bold text-black">Medellín, Colombia </span> (Lived here for 4 years, so I'm basically a Paisa)
+                      2. <span class="font-bold text-gray-200">Tenerife, Spain </span> (Canary Islands = Paradise)
                       <br>
-                      3. <span class="font-bold text-black">Denver, Colorado </span> (Lived here for a year, Rocky Mountain Air)
+                      3. <span class="font-bold text-gray-200">Medellín, Colombia </span> (lived here for 4 years, más paisa que una arepa)
                       <br>
-                      4. <span class="font-bold text-black">Papagayo, Costa Rica </span> (Great family memories)
+                      4. <span class="font-bold text-gray-200">Denver, Colorado </span> (lived here for a year, Rocky Mountain Air)
                       <br>
-                      5. <span class="font-bold text-black">Rome, Italy </span> (If Rome can fall, nothing is forever)
+                      5. <span class="font-bold text-gray-200">Papagayo, Costa Rica </span> (great family memories)
                       <br>
-                      6. <span class="font-bold text-black">Maui, Hawaii</span> (Never been more relaxed)
+                      6. <span class="font-bold text-gray-200">Rome, Italy </span> (if Rome can fall, nothing is forever)
                       <br>
-                      7. <span class="font-bold text-black">Nassau, Bahamas </span>(More fond family memories)
+                      7. <span class="font-bold text-gray-200">Maui, Hawaii</span> (never been more relaxed)
                       <br>
-                      8. <span class="font-bold text-black">Cusco, Peru </span> (Enchanting, maybe the history, but something is special)
+                      8. <span class="font-bold text-gray-200">Nassau, Bahamas </span>(More fond family memories)
                       <br>
-                      9. <span class="font-bold text-black">Lima, Perú </span> (Ceviche)
+                      9. <span class="font-bold text-gray-200">Cusco, Peru </span> (ancient)
                       <br>
-                      10. <span class="font-bold text-black">Florence, Italy</span> (Refreshing taste of craftsmanship)
+                      10. <span class="font-bold text-gray-200">Lima, Perú </span> (ceviche)
                       <br>
-                      11. <span class="font-bold text-black">San Pedro de Atacama, Chile </span> (Surreal landscapes)
+                      11. <span class="font-bold text-gray-200">Florence, Italy</span> (Refreshing Taste of Craftsmanship)
                       <br>
-                      12. <span class="font-bold text-black">Kauai, Hawaii</span> (Classic family memories)
+                      12. <span class="font-bold text-gray-200">San Pedro de Atacama, Chile </span> (surreal landscapes)
                       <br>
-                      13. <span class="font-bold text-black">Grand Cayman, Cayman Islands</span> (Islands are easy to love)
+                      13. <span class="font-bold text-gray-200">Kauai, Hawaii</span> (Classic Family Memories)
                       <br>
-                      14. <span class="font-bold text-black">Lübbecke, Germany</span> (My first taste of Europe)
+                      14. <span class="font-bold text-gray-200">Grand Cayman, Cayman Islands</span> (Lslands are Easy to Love)
                       <br>
-                      15. <span class="font-bold text-black">Jardín, Colombia </span> (Named "Garden" in Spanish for it's beauty)
+                      15. <span class="font-bold text-gray-200">Lübbecke, Germany</span> (my first taste of Europe)
+                      <br>
+                      16. <span class="font-bold text-gray-200">Jardín, Colombia </span> (Named "Garden" in Spanish for it's Beauty)
+                      <br>
+                      17. <span class="font-bold text-gray-200">Madrid, Spain</span> (All Around Underrated)
+                      <br>
+                      18. <span class="font-bold text-gray-200">Granada, Spain</span> (Creativity that inspires)
+                      <br>
+                      19. <span class="font-bold text-gray-200">Paracas, Perú</span> (Animals all over the place)
+                      <br>
+                      20. <span class="font-bold text-gray-200">Valle de Corcoa, Colombia</span> (Tallest Palm Trees in the World)
+                      <br>
                     </p>
                   </dd>
                 </div>
@@ -860,7 +771,7 @@
                     </button>
                   </dt>
                   <dd class="mt-2 pr-12" x-show="openPanel === 5">
-                    <p class="font-bold text-black">
+                    <p class="font-bold text-gray-200">
                       Jordan.
                     </p>
                   </dd>
@@ -869,32 +780,11 @@
   
     <div class="w-full">
     </div>
-    <div class="bg-white">
+    <div class="bg-gray-900">
       <div
         class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
       >
         <div class="flex justify-center md:order-2">
-          <!-- <a
-            href="https://www.instagram.com/diamondalltheway/"
-            class="ml-6 text-gray-400 hover:text-gray-500"
-          >
-            <span class="sr-only">Instagram</span>
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                fill-rule="evenodd"
-                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a> -->
-          <!-- <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
-            <span class="sr-only">Twitter</span>
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-              />
-            </svg>
-          </a> -->
           <a
             href="https://github.com/diamondalltheway"
             class="ml-6 text-gray-600 hover:text-gray-700"
@@ -907,15 +797,15 @@
                 clip-rule="evenodd"
               />
             </svg>
+
           </a>
         </div>
         <div class="mt-8 md:mt-0 md:order-1">
           <p class="text-center text-base leading-6 text-gray-600">
-            &copy; 2022 Hunter Stevens All rights reserved.
+            &copy; 2023 Hunter Stevens All rights reserved.
           </p>
         </div>
       </div>
     </div>
   </body>
 </html>
-
