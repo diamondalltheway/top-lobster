@@ -12,13 +12,55 @@
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+
   </head>
 
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Merriweather Sans', sans-serif;
     }
+
+    .earth {
+      font-size: 5em;
+      opacity: 0;
+      position: absolute;
+    }
+
+    .earth1 {
+      animation: fadeInOut 6s linear infinite;
+    }
+
+    .earth2 {
+      animation: fadeInOut 6s linear infinite;
+      animation-delay: 2s;
+    }
+
+    .earth3 {
+      animation: fadeInOut 6s linear infinite;
+      animation-delay: 4s;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
   </style>
 
   <body>
@@ -226,14 +268,14 @@
                 </span>
               </a>
               <br>
-              Building: <span class="font-semibold text-gray-200">AirMailer.io (TypeScript Rewrite)</span>
+              Building: <span class="font-semibold text-gray-200">Vertical Spanish (Content Generation)</span>
               <br>
-              Learning: <span class="font-semibold text-gray-200">React</span>
+              <!-- Learning: <span class="font-semibold text-gray-200">React</span> -->
             </p>
             <br>
 
             <div class="md:w-1/2 p-4 mx-auto text-gray-200 text-xl">
-              Hey there! 👋 I am Hunter, from The Woodlands, Texas - just north of Houston. As a full-stack developer, I enjoy building all kinds of applications with people from all over the world 🌍. 
+              Hey there! 👋 I am Hunter, from The Woodlands, Texas - just north of Houston. As a full-stack developer, I enjoy building all kinds of applications with people from all over the world 🌎
             </div>
             
             <div
@@ -266,43 +308,26 @@
           <!-- Logo Cloud Row -->
             <div class="bg-gray-900">
               <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                  <div class="col-span-1 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-                  </div>
-                  <div class="col-span-1 m-3 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-                  </div>
-                  <div class="col-span-1 m-3 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg">
-                  </div>
-                  <div class="col-span-1 m-3 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg">
-                  </div>
-                  <div class="col-span-1 m-3 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg">
-                  </div>
-                  <div class="col-span-1 m-3 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="Tuple">
-                  </div>
-                  <div class="col-span-1 m-3 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Mirage">
-                  </div>
-                  <div class="col-span-1 m-3 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="StaticKit">
-                  </div>
-                  <div class="col-span-1 m-3 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Transistor">
-                  </div>
-                  <div class="col-span-1 m-3 flex justify-center">
-                    <img class="h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Workcation">
-                  </div>
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="Tuple">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Mirage">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="StaticKit">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Transistor">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Workcation">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" alt="Workcation">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Workcation">
+                  <img class="h-12 col-span-1 m-3 flex justify-center" src="https://www.solodev.com/file/2e7ff4de-48b3-11ed-bb2e-0eaef3759f5f/stripe-icon.png" alt="Workcation">                  
+                  <img class="h-14 col-span-1 m-3 flex justify-center" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/12_Algolia_logo_logos-512.png" alt="Workcation">                  
                 </div>
                 </div>
               </div>
             </div>
           
-
         </div>
       </div>
 
