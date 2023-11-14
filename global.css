@@ -1,0 +1,11 @@
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.glow {
+  text-shadow: 5px 5px 25px #757575, 0px 0px 20px #614ad3;
+}
+
+.glow-green {
+  text-shadow: 5px 5px 25px #757575, 0px 0px 20px #5bc461;
+}
