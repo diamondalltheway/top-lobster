@@ -9,3 +9,56 @@ body {
 .glow-green {
   text-shadow: 5px 5px 25px #757575, 0px 0px 20px #5bc461;
 }
+
+.glow-box {
+  box-shadow: 5px 5px 25px #757575, 0px 0px 20px #614ad3;
+}
+
+.glow-box-lang {
+  box-shadow: 5px 5px 25px #757575, 0px 0px 20px rgb(205, 21, 104);
+}
+
+.glow-box-contact {
+  box-shadow: 5px 5px 25px #757575, 0px 0px 20px rgb(21, 205, 33);
+}
+
+.shake-on-hover:hover {
+  animation: shake 0.5s; /* Adjust time as necessary */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-5px, 5px);
+  }
+  20% {
+    transform: translate(-5px, -5px);
+  }
+  30% {
+    transform: translate(5px, 5px);
+  }
+  40% {
+    transform: translate(5px, -5px);
+  }
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  60% {
+    transform: translate(-5px, -5px);
+  }
+  70% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  90% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
