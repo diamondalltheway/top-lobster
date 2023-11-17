@@ -10,6 +10,10 @@ body {
   text-shadow: 5px 5px 25px #757575, 0px 0px 20px #5bc461;
 }
 
+.glow-letterz {
+  text-shadow: 5px 5px 25px #757575, 0px 0px 20px #c1c1c1;
+}
+
 .glow-box {
   box-shadow: 5px 5px 25px #757575, 0px 0px 20px #614ad3;
 }
